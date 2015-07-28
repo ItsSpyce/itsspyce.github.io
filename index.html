@@ -1,620 +1,131 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<html>
 <head>
-
-<!-- Meta Tags -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-<title>Welcome</title>   
-
-<meta name="description" content="" /> 
-
-<!-- Mobile Specifics -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="HandheldFriendly" content="true"/>
-<meta name="MobileOptimized" content="320"/>   
-
-<!-- Mobile Internet Explorer ClearType Technology -->
-<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
-
-<!-- Bootstrap -->
-<link href="_include/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Main Style -->
-<link href="_include/css/main.css" rel="stylesheet">
-
-<!-- Supersized -->
-<link href="_include/css/supersized.css" rel="stylesheet">
-<link href="_include/css/supersized.shutter.css" rel="stylesheet">
-
-<!-- FancyBox -->
-<link href="_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
-
-<!-- Font Icons -->
-<link href="_include/css/fonts.css" rel="stylesheet">
-
-<!-- Shortcodes -->
-<link href="_include/css/shortcodes.css" rel="stylesheet">
-
-<!-- Responsive -->
-<link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
-<link href="_include/css/responsive.css" rel="stylesheet">
-
-<!-- Custom CSS -->
-<link href="_include/css/custom.css" rel="stylesheet">
-
-<!-- Google Font -->
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-
-<!-- Fav Icon -->
-<link rel="shortcut icon" href="#">
-
-<link rel="apple-touch-icon" href="#">
-<link rel="apple-touch-icon" sizes="114x114" href="#">
-<link rel="apple-touch-icon" sizes="72x72" href="#">
-<link rel="apple-touch-icon" sizes="144x144" href="#">
-
-<!-- Modernizr -->
-<script src="_include/js/modernizr.js"></script>
-
-<!-- Analytics -->
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'YOUR ID']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-<!-- End Analytics -->
+	<title></title>
+	<style>
+		body {
+			margin: 0;
+			height: 100%;
+			padding: 0;
+			background-color: #F2F2F2;
+			color: #565759;
+			font-family: 'Open Sans', Arial, serif;
+			font-weight: 400;
+		}
+		.nav {
+			padding-top: 50px;
+			padding-left: 20px;
+			font-weight: 300;
+			width: 150px;
+			height: 100%;
+			background-color: #565759;
+			color: #F2F2F2;
+			float: left;
+			position: fixed;
+		}
+		.nav-title {
+			transition: border 0.2s, padding 0.2s;
+			padding: 15px;
+			border: none;
+			box-sizing: border-box;
+		}
+		.nav-title:hover {
+			border-right: solid #9CB6D9 10px;
+			padding-left: 0px;
+			transition: border 0.2s, padding 0.2s;
+		}
+		.body-content {
+			width: calc(100% - 150px);
+			height: 100%;
+			margin-right: 50px;
+		}
+		a {
+			transition: border 0.5s color 0.2s;
+			color: #BFBFBF;
+			font-size: 400;
+		}
+		a:hover {
+			transition: border 0.2s color 0.2s;
+			color: #9CB6D9;
+			text-decoration: none;
+		}
+		ul.clean li {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			margin-top: 10px;
+			background: none;
+			width: 100%;
+			min-height: 30px;
+			border: 0;
+			box-sizing: border-box;
+			transition: border 0.5s color 0.2s;
+			color: #BFBFBF;
+			font-size: 400;
+			cursor: pointer;
+		}
+		ul.clean li:hover {
+			border-right: solid #9CB6D9 4px;
+			box-sizing: border-box;
+			transition: border 0.2s color 0.2s;
+			color: #9CB6D9;
+		}
+		ul.clean {
+			color: #BFBFBF;
+			transition: color 0.2s, border 0.2s;
+			text-decoration: none;
+			font-size: 400;
+			padding-left: 20px;
+			border: none;
+		}
+		#page-content {
+			width: calc(100% - 170px);
+			height: calc(100% - 50px);
+			padding-left: 50px;
+		}
+		.footer {
+			background-color: #F2F2F2;
+			color: #BFBFBF;
+			border-top: solid #BFBFBF 1px;
+			bottom: 0;
+			margin-bottom: 0;
+			margin-left: 170px;
+			padding-top: 15px;
+			height: 50px;
+			width: calc(100% - 170px);
+			text-align: center;
+			position: absolute;
+			font-size: 300;
+		}
+		
+	</style>
+	<script>
+		function $(id){
+			return document.getElementById(id);
+		}
+		
+	</script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
 </head>
-
-
 <body>
-
-<!-- This section is for Splash Screen -->
-<div class="ole">
-<section id="jSplash">
-	<div id="circle"></div>
-</section>
-</div>
-<!-- End of Splash Screen -->
-
-<!-- Homepage Slider -->
-<div id="home-slider">	
-    <div class="overlay"></div>
-
-	<div class="container">
-    	<div class="row">
-        	<div class="span12">
-                <div class="slider-text">
-                    <div id="slidecaption"></div>
-                </div>
-            </div>
-        </div>
-    </div>   
-	
-	<div class="control-nav">
-        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
-        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
-        <ul id="slide-list"></ul>
-        
-        <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
-    </div>
-</div>
-<!-- End Homepage Slider -->
-
-<!-- Header -->
-<header>
-    <div class="sticky-nav">
-    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
-        
-        <div id="logo">
-        	<a id="goUp" href="#home-slider"></a>
-        </div>
-        
-        <nav id="menu">
-        	<ul id="menu-nav">
-            	<li class="current"><a href="#home-slider">Home</a></li>
-                <li><a href="#work">My Work</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#services">Services</a></li>
-                <!-- <li><a href="blog.html" class="external">Blog</a></li> -->
-                <li><a href="#contact">Contact</a></li>
-				<!-- <li><a href="shortcodes.html" class="external">Shortcodes</a></li> -->
-            </ul>
-        </nav>
-        
-    </div>
-</header>
-<!-- End Header -->
-
-<!-- Our Work Section -->
-<div id="work" class="page">
-	<div class="container">
-    	<!-- Title Page -->
-        <div class="row">
-            <div class="span12">
-                <div class="title-page">
-                    <h2 class="title">My Work</h2>
-                    <h3 class="title-description">All public work is hosted on <a href="https://github.com/conji/">Github</a>.</h3>
-                    
-                    <div class="page-description">
-                		
-                	</div>
-                
-                </div>    
-            </div>
-        </div>
-        <!-- End Title Page -->
-        
-        <!-- Portfolio Projects -->
-        <div class="row">
-        	<div class="span12">
-            	<!-- Filter -->
-                <nav id="options" class="work-nav">
-                    <ul id="filters" class="option-set" data-option-key="filter">
-                    	<li class="type-work">Type of Work</li>
-                        <li><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
-                        <li><a href="#filter" data-option-value=".design">Design</a></li>
-                        <li><a href="#filter" data-option-value=".system">Systems</a></li>
-                        <li><a href="#filter" data-option-value=".service">Services</a></li>
-                        <li><a href="#filter" data-option-value=".library">Libraries</a></li>
-                    </ul>
-                </nav>
-                <!-- End Filter -->
-            </div>
-            
-            <div class="span12">
-            	<div class="row">
-                	<section id="projects">
-                    	<ul id="thumbs">
-                        
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 design">
-                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The City" href="_include/img/work/full/image-01-full.jpg">
-                                    <span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-01.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 design">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Office" href="_include/img/work/full/image-02-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-02.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 photography">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Mountains" href="_include/img/work/full/image-03-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-03.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 video">
-                            	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                            	<a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Video Content From Vimeo" href="http://vimeo.com/51460511">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-08.jpg" alt="Video">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 photography">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Sea" href="_include/img/work/full/image-04-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-04.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 photography">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Clouds" href="_include/img/work/full/image-05-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-05.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 video">
-                            	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                            	<a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Video Content From Vimeo" href="http://vimeo.com/50834315">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-09.jpg" alt="Video">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 design">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Dark" href="_include/img/work/full/image-06-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-06.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 design">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Beach" href="_include/img/work/full/image-07-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-07.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-                            <!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 illustration">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Bat" href="_include/img/work/full/image-10-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-10.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-                            <!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 illustration">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Wild Cat" href="_include/img/work/full/image-11-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-11.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-                            <!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 illustration">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="HoneyBear" href="_include/img/work/full/image-12-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-12.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                            </li>
-                        	<!-- End Item Project -->
-                        </ul>
-                    </section>
-                    
-            	</div>
-            </div>
-        </div>
-        <!-- End Portfolio Projects -->
-    </div>
-</div>
-<!-- End Our Work Section -->
-
-<!-- About Section -->
-<div id="about" class="page-alternate">
-<div class="container">
-    <!-- Title Page -->
-    <div class="row">
-        <div class="span12">
-            <div class="title-page">
-                <h2 class="title">About Me</h2>
-                <h3 class="title-description">How I Make Your Dreams Real</h3>
-                
-                <div class="page-description">
-                    Coming Soon&trade;
-                </div>
-                
-            </div>
-        </div>
-    </div>
-    <!-- End Title Page -->
-    
-    <div class="row margin-40">
-    	<div class="span4">
-        	<h3>My Goal</h3>
-			When I visualize your goal with you, I make sure that you're not only ok with how I make it, but that you <i>support</i> it. When we work together, every<a href="#every-disclaimer">*</a> detail will be made reality. From security to ease-of-access, I can make all of it happen. 
-        </div>
-        
-        <div class="span4">
-        	<h3>My Tools</h3>
-            A majority of the time, I will supply my own tools when it comes to developing the software you require. If anything is needed, though, I will do my best to cover it before hand on a detailed plan. 
-        </div>
-        
-        <div class="span4">
-        	<h3>My Specialties</h3>
-            
-            <div class="progress-bar">
-                <div class="progress">
-                	<span class="field">Design</span>
-                    <span class="field-value">50%</span>
-                    <div class="bar" style="width: 50%;"></div>
-                </div>
-            </div>
-            
-            <div class="progress-bar">
-                <div class="progress">
-                	<span class="field">Development</span>
-                    <span class="field-value">90%</span>
-                    <div class="bar" style="width: 90%;"></div>
-                </div>
-            </div>
-            
-            <div class="progress-bar">
-                <div class="progress">
-                	<span class="field">UX/UI</span>
-                    <span class="field-value">33%</span>
-                    <div class="bar" style="width: 33%;"></div>
-                </div>
-            </div>
-            
-            <div class="progress-bar">
-                <div class="progress">
-                	<span class="field">Reliability</span>
-                    <span class="field-value">100%</span>
-                    <div class="bar" style="width: 100%;"></div>
-                </div>
-            </div>    
-        </div>
-        
-    </div>
-    
-    <div class="sep">
-    	<span class="separator"></span>
-    </div>
-    
-    <!-- People -->
-    <div class="row">
-    	
-        <!-- Start Profile -->
-    	<div class="span4 profile">
-        	<div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Conji (Justin Cox)</span>
-                </div>
-                <img src="_include/img/profile/profile-01.jpg" alt="Justin Cox">
-            </div>
-            <h3 class="profile-name">Justin Cox</h3>
-            <p class="profile-description">
-                A United States Marine full-time, I also work on developing server systems, services, and applications as a full-time hobby. My work ranges from examples like <a href="https://github.com/cloudsdaleapp/">Cloudsdale Social Services</a> to <a href="https://github.com/conji/sec/">Human-Friendly Configurations</a>. 
-            </p>
-            	
-            <div class="social">
-            	<ul class="social-icons">
-                	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-dribbble"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- End Profile -->
-        
-    </div>
-    <!-- End People -->
-</div>
-</div>
-<!-- End About Section -->
-
-<!-- Big Blockquote -->
-<div class="big-quote page">
-	<div class="container">
-    	<div class="row">
-        	<div class="span12">
-            	<p>Quality is not what happens when what you do matches your intentions. It is what happens when what you do matches your customers’ expectations.</p>
-
-                <span class="font-icon-blockquote">Guaspari</span>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Big Blockquote -->
-
-<!-- Services Section -->
-<div id="services" class="page-alternate">
-<div class="container">
-    <!-- Title Page -->
-    <div class="row">
-        <div class="span12">
-            <div class="title-page">
-                <h2 class="title">Services</h2>
-                <h3 class="title-description">The key to a successful network operation is to provide high quality services.</h3>
-                
-                <div class="page-description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus. 
-                    Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum. Etiam vel orci ipsum. Sed eget velit ipsum. Duis in tortor scelerisque felis mattis imperdiet. Donec at libero tellus. 
-                    <a href="#">Suspendisse consectetur</a> consectetur bibendum. Pellentesque posuere, ligula volutpat elementum interdum, diam arcu elementum ipsum, vel ultricies est mauris ut nisi.</p>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-    <!-- End Title Page -->
-    
-    <div class="sep">
-    	<span class="separator"></span>
-    </div>
-    
-    <!-- Services Boxes -->
-    <div class="row">
-    	<div class="span4">
-        	<div class="services-box">
-        		<div class="icon">
-                	<span class="font-icon-cog"></span>
-                </div>
-                <h3>Deployment</h3>
-                <p>What good is a service if you can't get it out there fast, efficiently, and effectively? Not only do your users need the ability to use it, you need the ability to manage it.</p>
-        	</div>
-        </div>
-        
-        <div class="span4">
-        	<div class="services-box">
-        		<div class="icon">
-                	<span class="font-icon-layer"></span>
-                </div>
-                <h3>Specialization</h3>
-                <p>From a polished front-end to an oiled up back-end, everything works together as if it were crafted that way. Oh wait. That's because it was.</p>
-        	</div>
-        </div>
-        
-        <div class="span4">
-        	<div class="services-box">
-        		<div class="icon">
-                	<span class="font-icon-map"></span>
-                </div>
-                <h3>Service Management</h3>
-                <p>All and any service we offer you can and will run on any platform, system, and device (except your washing machine). This allows for maximum proficiency and customer satistfaction.</p>
-        	</div>
-        </div>
-    </div>
-    <!-- End Services Boxes -->
-    
-</div>
-</div>
-<!-- End Services Section -->
-
-<!-- Contact Section -->
-<div id="contact" class="page">
-<div class="container">
-    <!-- Title Page -->
-    <div class="row">
-        <div class="span12">
-            <div class="title-page">
-                <h2 class="title">Get in Touch</h2>
-                <h3 class="title-description">We’re currently accepting new client projects. We look forward to serving you.</h3>
-                
-                <div class="page-description">
-                    <p></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Title Page -->
-    
-    <!-- Contact Form -->
-    <div class="row">
-    	<div class="span9">
-        
-        	<form id="contact-form" class="contact-form" action="#">
-            	<p class="contact-name">
-            		<input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
-                </p>
-                <p class="contact-email">
-                	<input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
-                </p>
-                <p class="contact-message">
-                	<textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
-                </p>
-                <p class="contact-submit">
-                	<a id="contact-submit" class="submit" href="#">Send Your Email</a>
-                </p>
-                
-                <div id="response">
-                
-                </div>
-            </form>
-         
-        </div>
-        
-        <div class="span3">
-        	<div class="contact-details">
-        		<h3>Contact Details</h3>
-                <ul>
-                    <li><a href="#">justin.cox5611@yahoo.com</a> <i>*any spam email will not be tolerated and immediately blocked, so please don't do it. &lt;3 </i></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- End Services Form -->
-</div>
-</div>
-<!-- End Contact Section -->
-
-<!-- Socialize -->
-<div id="social-area" class="page">
-	<div class="container">
-    	<div class="row">
-            <div class="span12">
-                <nav id="social">
-                    <ul>
-                        <li><a href="https://twitter.com/Conji" title="Follow Me on Twitter" target="_blank"><span class="font-icon-social-twitter"></span></a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Socialize -->
-
-<!-- Footer -->
-<footer>
-	<p class="credits">&copy;2013 Chakra. <a href="http://themes.alessioatzeni.com/html/chakra/" title="Chakra | Responsive One Page Template">Chakra Template</a> by <a href="http://www.alessioatzeni.com/" title="Alessio Atzeni | Web Designer &amp; Front-end Developer">Alessio Atzeni</a></p>
-</footer>
-<!-- End Footer -->
-
-<!-- Back To Top -->
-<a id="back-to-top" href="#">
-	<i class="font-icon-arrow-simple-up"></i>
-</a>
-<!-- End Back to Top -->
-
-
-<!-- Js -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
-<script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script> <!-- Google Map API -->
-<script src="_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
-<script src="_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
-<script src="_include/js/waypoints.js"></script> <!-- WayPoints -->
-<script src="_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
-<script src="_include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
-<script src="_include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
-<script src="_include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
-<script src="_include/js/jquery.tweet.js"></script> <!-- Tweet -->
-<script src="_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
-<script src="_include/js/main.js"></script> <!-- Default JS -->
-<!-- End Js -->
-
+	<div class="nav">
+		<div class="nav-title">conji&trade;</div>
+		<ul class="clean">
+			<li class="nav-target" data-page="Hello world" id="home">home</li>
+			<li>blog</li>
+			<li>
+				<ul class="clean" id="post-list">
+				<!-- blog posts -->
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="body-content">
+		<div id="page-content">
+<!-- ANY CONTENT TO BE LOADED ONTO THE PAGE FOR INFORMATION WILL GO HERE -->
+		</div>
+	<!-- FOOTER -->
+		<div class="footer">Check me out on <a href="https://github.com/conji">Github</a>.</div>
+	</div>
 </body>
 </html>
